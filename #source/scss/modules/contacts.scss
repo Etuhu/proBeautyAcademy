@@ -1,0 +1,106 @@
+.contacts {
+    .contacts-wrapper {
+        .contacts-content {
+            display: flex;
+            @media (max-width: 899px) {
+                flex-wrap: wrap;
+            }
+            .contacts-text,
+            .contacts-form-wrapper {
+                width: 50%;
+                @media (max-width: 899px) {
+                    width: 100%;
+                }
+            }
+            .contacts-text {
+                @media (max-width: 899px) {
+                    margin-bottom: 3rem;
+                }
+                @media (max-width: 575px) {
+                    margin-bottom: 2rem;
+                }
+                .basic-title {
+                    margin-bottom: 3rem;
+                    @media (max-width: 899px) {
+                        margin-bottom: 2rem;
+                    }
+                    span {
+                        color: $pink;
+                        padding-left: 15px;
+                        @media (max-width: 575px) {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+                strong {
+                    font-weight: 500;
+                    font-size: 3rem;
+                    line-height: 1;
+                    @media (max-width: 991px) {
+                        font-size: 2.85rem;
+                    }
+                    @media (max-width: 575px) {
+                        font-size: 1.45rem;
+                    }
+                }
+            }
+            .contacts-form {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                gap: 1rem;
+                padding-top: 1rem;
+                padding-bottom: 3rem;
+                @media (max-width: 899px) {
+                    width: 100%;
+                }
+                .form-field {
+                    background-color: $grey;
+                    outline: unset;
+                    box-shadow: unset;
+                    font-size: 1rem;
+                    line-height: 1;
+                    font-weight: 400;
+                    padding: 34px 50px;
+                    border-radius: 50px;
+                    border: 1px solid rgba(0, 0, 0, 0);
+                    transition: 0.2s ease;
+                    @media (max-width: 1399px) {
+                        padding: 30px 40px;
+                    }
+                    @media (max-width: 1199px) {
+                        padding: 20px 30px;
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 1.45rem;
+                        padding: 17px 30px;
+                    }
+                    @media (max-width: 575px) {
+                        font-size: 1rem;
+                        padding: 17px 25px;
+                    }
+                    &::placeholder {
+                        color: $dark;
+                    }
+                    &:focus {
+                        border: 1px solid $dark;
+                        transition: 0.2s ease;
+                    }
+                }
+                .record-button {
+                    width: fit-content;
+                    @media (max-width: 899px) {
+                        margin-left: auto;
+                    }
+                    @media (max-width: 575px) {
+                        margin-left: unset;
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

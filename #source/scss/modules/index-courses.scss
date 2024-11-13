@@ -1,0 +1,133 @@
+.index-courses {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+    .index-courses-item {
+        background-color: $grey;
+        border-radius: $border-radius-desktop;
+        padding: 40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 1399px) {
+            padding: 30px;
+        }
+        @media (max-width: 799px) {
+            padding: 20px;
+        }
+        @media (max-width: 575px) {
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .index-courses-item-title {
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            @media (max-width: 1399px) {
+                font-size: 2.2rem;
+            }
+            @media (max-width: 1299px) {
+                font-size: 1.8rem;
+            }
+            @media (max-width: 991px) {
+                font-size: 3.4rem;
+            }
+            @media (max-width: 575px) {
+                font-size: 1.8rem;
+            }
+        }
+        p {
+            font-size: 0.9rem;
+            @media (max-width: 991px) {
+                font-size: 1rem;
+            }
+        }
+        ul {
+            padding-left: 1.5rem;
+            @media (max-width: 991px) {
+                padding-left: 2rem;
+            }
+            @media (max-width: 575px) {
+                margin-bottom: 2rem;
+            }
+            li {
+                line-height: 1.5;
+                @media (max-width: 991px) {
+                    font-size: 1.4rem;
+                    &::marker {
+                        font-size: 12px;
+                    }
+                }
+                @media (max-width: 575px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .basic-button {
+            margin-top: auto;
+            border-color: $pink;
+            width: fit-content;
+            color: $dark;
+            transition: 0.23s ease;
+            &:hover {
+                color: $grey;
+                background-color: $pink;
+                transition: 0.23s ease;
+            }
+        }
+        &--pink {
+            background-color: $pink;
+            color: $grey;
+            ul {
+                @media (min-width: 576px) and (max-width: 991px) {
+                    margin-bottom: 0;
+                }
+            }
+            .basic-button {
+                color: $grey;
+                border-color: $grey;
+                @media (max-width: 991px) {
+                    margin-left: auto;
+                }
+                @media (max-width: 575px) {
+                    margin-left: unset;
+                }
+                &:hover {
+                    color: $pink;
+                    background-color: $grey;
+                }
+            }
+        }
+        &--black {
+            background-color: $dark;
+            color: $grey;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            .index-courses-item-title {
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+    }
+    .index-courses--coaching {
+        @media (max-width: 991px) {
+            padding-right: 5px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+    }
+    .index-courses--partnership {
+        @media (max-width: 991px) {
+            padding-left: 5px;
+        }
+    }
+    .index-courses-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @media (max-width: 991px) {
+            margin-top: 10px;
+        }
+    }
+}
